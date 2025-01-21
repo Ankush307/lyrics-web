@@ -11,3 +11,7 @@
 .font-montserrat {
   font-family: "Montserrat", serif;
 }
+
+.button-svg svg path {
+  stroke: white;
+}
