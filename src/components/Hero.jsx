@@ -20,7 +20,7 @@ const Hero = () => {
         Pop: "Trending Pop Playlists",
         Rock: "Trending Rock Playlists",
         All: "Hit Me Hard and Soft",
-        More: "No popular songs available at the moment.",
+        More: "No songs available at the moment.",
     }[musicCategory]);
 
     return (
