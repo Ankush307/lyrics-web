@@ -35,7 +35,7 @@ const Hero = () => {
                         <button className="flex items-center gap-4 justify-center h-[29px] min-w-[64px] text-xs leading-6 border border-solid border-black rounded-[9px] bg-transparent transition-all ease-linear duration-200 font-normal text-darkBlack" onClick={() => handleCategoryClick("More")}> More <ArrowIcon /></button>
                     </div>
                     {ALPHABET_LIST.map((obj, i) => (
-                        <p className="size-[29px] max-xl:overflow-x-scroll min-w-[29px] text-xs hover:text-[#FAFAFF] cursor-pointer font-medium leading-[18px] rounded-full flex items-center justify-center bg-transparent transition-all ease-linear duration-200 hover:bg-black text-darkBlack" key={i} onClick={() => handleAlphabetChande(obj)}> {obj}</p>
+                        <p className="size-[29px] max-xl:overflow-x-scroll min-w-[29px] text-xs hover:text-[#FAFAFF] cursor-pointer font-medium leading-[18px] rounded-full flex items-center justify-center bg-transparent transition-all ease-linear duration-200 hover:bg-black text-darkBlack uppercase" key={i} onClick={() => handleAlphabetChande(obj)}> {obj}</p>
                     ))}
                 </div>
                 <div className="w-full max-w-[1141px] mx-auto rounded-[20px] bg-dark-black h-[347px] relative mt-[43px] max-lg:h-full max-lg:mt-7">
@@ -57,7 +57,9 @@ const Hero = () => {
                                 </div>
                             </div>
                         </div>
-                        <img src="./assets/images/singer-img.webp" alt="billie-eillish" className="py-[43px] pe-[43px] max-lg:p-10 max-md:p-6 max-sm:p-4 max-md:mx-auto" />
+                        <div className="py-[43px] pe-[43px] max-lg:p-10 max-md:p-6 max-sm:p-4 max-lg:w-full">
+                            <img src="./assets/images/singer-img.webp" alt="billie-eillish" className=" max-md:mx-auto w-full lg:min-w-[261px] max-lg:max-w-[261px] max-lg:mx-auto" />
+                        </div>
                     </div>
                 </div>
             </div>
