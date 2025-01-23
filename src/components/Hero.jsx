@@ -40,7 +40,7 @@ const Hero = () => {
                             onClick={() => changeDomainHandler("more")}> More <ArrowIcon />
                         </button> */}
                         <div className="relative inline-block">
-                            <select className={`flex items-center gap-1 justify-center h-[29px] min-w-[64px] text-xs leading-6 border border-solid border-black rounded-[9px] bg-transparent transition-all ease-linear duration-300 font-normal outline-none text-black ${domain === "more" ? "!bg-black !text-white" : "bg-white"}`}
+                            <select className={`flex items-center gap-1 justify-center h-[29px] min-w-[64px] text-xs px-1 leading-6 border border-solid border-black rounded-[9px] bg-transparent transition-all ease-linear duration-300 font-normal outline-none text-black ${domain === "more" ? "!bg-black !text-white" : "bg-white"}`}
                                 value={domain} onChange={(e) => changeDomainHandler(e.target.value)}>
                                 <option value="soft" className={`bg-white text-black ${domain === "soft" ? "bg-[#14191C] !text-white" : ""}`}>SOFT</option>
                                 <option value="more" className={`bg-white text-black ${domain === "more" ? "bg-[#14191C] !text-white" : ""}`}>More</option>
